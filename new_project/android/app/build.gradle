@@ -1,0 +1,47 @@
+plugins {
+    id "com.android.application"
+    id "kotlin-android"
+    // The Flutter Gradle Plugin must be applied after the Android and Kotlin Gradle plugins.
+    id "dev.flutter.flutter-gradle-plugin"
+    id 'com.google.gms.google-services' // Ensure you have Google Play Services correctly set up
+}
+
+dependencies {
+    implementation 'org.tensorflow:tensorflow-lite:2.7.0' // Consistent TensorFlow Lite version
+    implementation 'org.tensorflow:tensorflow-lite-gpu:2.7.0' // Optional: if you use GPU support
+    implementation 'androidx.appcompat:appcompat:1.6.1' // Use the latest stable version
+    implementation 'androidx.core:core-ktx:1.10.0'
+}
+
+android {
+    namespace = "com.example.new_project"
+    compileSdk = 34 //flutter.compileSdkVersion
+    ndkVersion = flutter.ndkVersion
+
+    compileOptions {
+        sourceCompatibility = JavaVersion.VERSION_1_8
+        targetCompatibility = JavaVersion.VERSION_1_8
+    }
+
+    kotlinOptions {
+        jvmTarget = JavaVersion.VERSION_1_8
+    }
+
+    defaultConfig {
+        applicationId = "com.example.new_project"
+        minSdk = 23//flutter.minSdkVersion
+        targetSdk = 34//flutter.targetSdkVersion
+        versionCode = flutter.versionCode
+        versionName = flutter.versionName
+    }
+
+    buildTypes {
+        release {
+            signingConfig = signingConfigs.debug // Update signing config as needed
+        }
+    }
+}
+
+flutter {
+    source = "../.."
+}

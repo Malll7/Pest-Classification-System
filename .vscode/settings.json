@@ -1,0 +1,19 @@
+{
+    "cmake.ignoreCMakeListsMissing": true,
+    "cSpell.words": [
+        "africanized",
+        "Africanized",
+        "hornworms",
+        "Hornworms",
+        "mamorated",
+        "Marmorated",
+        "navigatepestname",
+        "preprocess",
+        "rootworms",
+        "Rootworms",
+        "stemfly",
+        "tflite",
+        "todos"
+    ],
+    "python.REPL.enableREPLSmartSend": false
+}

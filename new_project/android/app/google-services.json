@@ -1,0 +1,30 @@
+{
+  "project_info": {
+    "project_number": "777668490104",
+    "firebase_url": "https://pest-classification-a6a6d-default-rtdb.asia-southeast1.firebasedatabase.app",
+    "project_id": "pest-classification-a6a6d",
+    "storage_bucket": "pest-classification-a6a6d.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:777668490104:android:aa019fb965189b133fce8d",
+        "android_client_info": {
+          "package_name": "com.example.new_project"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyCAoGkxwndISaqvadJuyfwZ4fG-d9LbEpo"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
